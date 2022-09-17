@@ -1,0 +1,90 @@
+
+.heding{
+    display: inline-block;
+    align-items: center;
+    margin: 20px 20px;
+    position: relative;
+    border: 1px solid #fff;
+}
+.HEDING1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 40px solid green;
+    border-left: 40px solid transparent;
+    /* border-right: 40px solid blue; */
+    /* border-bottom: 40px solid blue; */
+}
+.sale {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    transform: rotate(45deg);
+    top: 6px;
+    font-size: 15px;
+    color: #fff;
+}
+.heding_item:hover  {
+    border: 1px orange solid;
+}
+.heding_item {
+    border: 1px #CCC solid;
+    
+   
+}
+.heding_item-img img {
+    overflow: hidden;
+}
+
+.heding_item-money h1 {
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+}
+.heding_item-sup p {
+    text-align: center;
+    opacity: 0.8;
+}
+
+
+@keyframes buy1 {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+    }
+    25% {
+        /* bottom: -30px; */
+        opacity: 0;
+    }
+    75% {
+        /* bottom: -10px; */
+        opacity: 0.3;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+.heding_item-buy-item {
+   position: absolute;
+   bottom:1px;
+   background-color: orange;
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   margin: 0;
+   text-align: center;
+   display: none;
+}
+.heding:hover .heding_item-buy-item{
+    animation:buy1 ease-in-out 0.5s ;
+    display: inline-block;
+}
+.phandau {
+    display: flex;
+    justify-content: center;
+}
+
