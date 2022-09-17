@@ -4,7 +4,8 @@
     align-items: center;
     margin: 20px 20px;
     position: relative;
-    border: 1px solid #fff;
+    border: 1px solid #fff;   
+    
 }
 .HEDING1::after {
     content: "";
@@ -31,18 +32,21 @@
     border: 1px orange solid;
 }
 .heding_item {
-    border: 1px #CCC solid;
-    
-   
+    border: 1px #CCC solid; 
+    overflow: hidden; 
 }
 .heding_item-img img {
-    overflow: hidden;
+    /* overflow: hidden;   */
+}
+.heding_item-img img:hover {
+    transform: rotate(1deg);    
 }
 
 .heding_item-money h1 {
     text-align: center;
     color: orange;
     font-size: 20px;
+    
 }
 .heding_item-sup p {
     text-align: center;
@@ -82,6 +86,7 @@
 .heding:hover .heding_item-buy-item{
     animation:buy1 ease-in-out 0.5s ;
     display: inline-block;
+   
 }
 .phandau {
     display: flex;
